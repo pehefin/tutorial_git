@@ -2,6 +2,7 @@ html {
 	height: 100%;
 	width: 100%;
   }
+  @charset "UTF-8";
   
   @font-face {
 	  font-family: 'FontTitulo1';
@@ -9,10 +10,14 @@ html {
   }
   
   @font-face {
-		  font-family: 'FontLista';
-		  src: url("../_Fonts/Montserrat-SemiBold.ttf");
+		  font-family: 'FontH2';
+		  src: url("../Fonts/Montserrat-SemiBold.ttf");
   }
-
+  
+  @font-face {
+	font-family: 'FontH3';
+	src: url("../Fonts/Montserrat-SemiBold.ttf"); 
+  }
   p {
 	text-align: justify;
 	text-indent: 25px;
@@ -51,8 +56,7 @@ html {
   }
   
   nav#menu {
-		  display: block;
-		  
+		  display: block;		  
   }
   
   nav#menu h1 {
@@ -70,7 +74,7 @@ html {
   
   h1 {
 	font-family: 'FontTitulo', sans-serif;
-	font-size: 20pt;
+	font-size: 30pt;
 	color: #606060;
 	text-shadow: 1px 2px 2px #000000;
 	padding: 5px;
@@ -78,29 +82,32 @@ html {
   }
   
   h2 {
-	  font-family: 'FontLista';
-	  font-style: italic;
+	  font-family: 'FontH2', sans-serif;
+	  text-align: center;
+	  font-size: 25pt;
+	  color: #606060;
+	  padding: 5px;	
+	  margin: 10px;
   }
   
   
   table {
 	font-family: 'FontLista', sans-serif;
-	position: center;
 	border-radius: 10px;
 	display: block;
 	width: 250px;
 	padding: 10px;
 	margin: auto;
-	box-shadow: 5px 5px 9px black;
-	background-image: linear-gradient(to top, #4c6c81, #083263);
+	box-shadow: 2px 2px 6px black;
+	background-image: linear-gradient(to bottom, #a0816c, #d1c0a8);
   }
   
   table td {
 		font-size: 15pt;
 		padding: 10px;
-		text-align: center;
+		padding-right: 5px;
 		font-style: italic;
-		margin: 10px;
+		margin: auto;
 		box-sizing: border-box;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   }
@@ -108,16 +115,11 @@ html {
   table td:hover {
 	  text-decoration: underline;
   }
-  
-  
-  
-  h2 {
-	  text-align: center;
-	  font-size: 25pt;
-	  color: #606060;
-	  background-color: #dddddd;
-	  padding: 5px;	
-	  margin: 10px;
+
+  table caption{
+	text-align: center;
+	margin: 10px;
+	padding: 10px;
   }
   
   body {
@@ -134,7 +136,7 @@ html {
 	background-color: #a9a9a9;
 	padding: 20px;
 	margin: 10px 10px 5px 5px;
-	box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   }
   
   div#Descrição{
@@ -146,6 +148,7 @@ html {
 	width: 750px;
 	position: center-right;
 	background-color: #C4A484;
+	box-shadow: 2px 2px 6px black;
   }
   
   footer#rodape {
