@@ -199,7 +199,17 @@
 	font-size: 10pt;
 	margin: 10px;
   }
-  
+
+  div#Audio{
+	display: flex;
+	justify-content: center;
+}
+
+	iframe{
+		display: flex;
+		justify-content: center;
+	}
+
   footer#rodape {
 		  margin-top: 20px;
 		  padding-top: 10px;
